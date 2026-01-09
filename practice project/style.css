@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+* {
+    font-family: gilroy, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+.intro{
+    height: 300px;
+    width: 100%; 
+    background-color: lightblue;
+    padding: 50px;
+}
+
+.intro h1{
+    font-size: 120px;
+    line-height: 160px;
+    font-weight: 600;
+}
