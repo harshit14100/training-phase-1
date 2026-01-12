@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
+
 html,body{
   height: 100%;
   width: 100%;
@@ -7,7 +9,7 @@ html,body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Spline Sans", sans-serif;
 }
 
 .main{
@@ -38,6 +40,11 @@ html,body{
   width: 40px;
 }
 
+.user .role{
+  font-size: 14px;
+  color: gray;
+}
+
 aside{
   width: 22%;
   min-width: 250px;
@@ -56,6 +63,7 @@ aside{
   font-size: 18px;
   padding: 10px 0;
   cursor: pointer;
+  padding-left: 10px;
 }
 .menu p img{
   height: 30px;
@@ -68,13 +76,13 @@ aside{
 }
 
 .menu p:hover {
-  background-color: #f1f5f9;
-  color: rgb(53, 79, 227);
+  background-color: #D3F7B5;
+  color: rgb(0, 0, 0);
 }
 
 
 .contact {
-  background-color: #f8fafc;
+  background-color: white;
   padding: 16px;
   border-radius: 12px;
   font-size: 14px;
@@ -92,21 +100,33 @@ aside{
   font-size: 16px;
 }
 
-button{
-  margin-top: 0px;
+.contact button{
+  margin-top: 35px;
   padding-left: 20px;
-  width: 100px;
+  width: 150px;
   padding: 8px 12px;
   background-color: #1F4451 ;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+
+}
+
+.btn{
+  padding-left: 20px;
+  width: 150px;
+  padding: 8px 12px;
+  background-color: #ffffff ;
+  color: #000000;
+  border: 2px solid #B5BDCD ;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 #right-section{
   flex: 1;
-  background-color: #c6c6c6;
+  background-color: #d9e8c6;
   padding: 40px 40px;
 }
 
@@ -134,9 +154,10 @@ button{
 #right-section i{
   position: relative;
   left: 1340px;
-  top: -53px;
+  top: -48px;
   color: rgb(134, 124, 124);
 }
+
 .document-list{
   display: flex;
   flex-direction: column;
@@ -153,9 +174,9 @@ button{
 .doc-header,
 .doc-row {
   display: grid;
-  grid-template-columns: 3fr 2fr 2fr 1fr;
+  grid-template-columns: 50% 20% 20% 10%;
   align-items: center;
-  padding: 14px 20px;
+  padding: 22px 20px;
 }
 
 .doc-header {
@@ -182,12 +203,26 @@ button{
   align-items: center;
 }
 
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 
 .doc-header {
   background-color: #f8fafc;
   font-weight: 600;
 }
 
+.checkbox i{
+  position: relative;
+  top: 20px;
+  font-size: 16px;
+  left: 2px;
+  color: rgb(134, 124, 124);
+
+}
 .doc-row {
   border-top: 1px solid #e5e7eb;
 }
@@ -221,4 +256,16 @@ button{
   font-size: 12px;
   text-align: center;
   width: fit-content;
+}
+
+.signing{
+  /* margin-top: 35px; */
+  padding-left: 20px;
+  width: 115px;
+  padding: 8px 12px;
+  background-color: #1F4451 ;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
