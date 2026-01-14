@@ -31,7 +31,8 @@
         </div>
         <nav class="menu">
           <p><img src="home.png" alt="" />Home</p>
-          <p><i class="ri-file-text-line"></i>Documents</p>
+          <p class="active"><i class="ri-file-text-line"></i>Documents</p>
+
           <p><img src="msg.png" alt="" />Chat with Neptune</p>
           <p><img src="qna.png" alt="" />help</p>
           <p><img src="settings.png" alt="" />settings</p>
@@ -62,10 +63,13 @@
 
         <div class="nav">
           <h1>My Documents</h1>
-          <input type="search" placeholder="Search Doccuments" />
+          <div class="search-box">
+            <input type="search" placeholder="Search documents" />
+            <i class="ri-search-line"></i>
+          </div>
         </div>
 
-        <i class="ri-search-line"></i>
+        <!-- <i class="ri-search-line"></i> -->
 
         <div class="document-list">
           <div class="doc-table">
@@ -77,77 +81,133 @@
               </div>
               <div>Status</div>
               <div>Last Modified</div>
-              <div><i class="ri-more-2-fill"></i></div>
+              <!-- <div><i class="ri-more-2-fill"></i></div> -->
             </div>
 
             <div class="doc-row">
-              <div class="doc-name">
-                <!-- <input type="checkbox"> -->
+              <div class="doc-name checkbox">
+                <input type="checkbox" />
                 <p>Title of Document Goes Here</p>
               </div>
+
               <div class="status">
                 <div class="signing">Needs signing</div>
                 <!-- <span>Waiting for 1 person</span> -->
               </div>
               <div class="doc-date">12 Jan 2026 <br />2:01 PM</div>
               <div class="doc-action">
-                <button class="btn">Sign up</button>
+                <button class="btn">Sign now</button>
+                <div class="menu-wrapper">
+                  <i class="ri-more-2-fill more-icon"></i>
+
+                  <div class="dropdown-menu">
+                    <p>Edit</p>
+                    <p>Delete</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="doc-row">
-              <div class="doc-name">
+              <div class="doc-name checkbox">
+                <input type="checkbox" />
                 <p>Title of Document Goes Here</p>
               </div>
+
               <div class="status">
                 <div class="doc-status">Pending</div>
                 <span>Waiting for 1 person</span>
               </div>
               <div class="doc-date">12 Jan 2026 <br />2:01 PM</div>
               <div class="doc-action">
-                <button class="btn">Sign up</button>
+                <button class="btn">Preview</button>
+                <div class="menu-wrapper">
+                  <i class="ri-more-2-fill more-icon"></i>
+
+                  <div class="dropdown-menu">
+                    <p>Edit</p>
+                    <p>Delete</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="doc-row">
-              <div class="doc-name">
+              <div class="doc-name checkbox">
+                <input type="checkbox" />
                 <p>Title of Document Goes Here</p>
               </div>
+
               <div class="status">
                 <div class="doc-status">Pending</div>
                 <span>Waiting for 2 person</span>
               </div>
               <div class="doc-date">12 Jan 2026 <br />2:01 PM</div>
               <div class="doc-action">
-                <button class="btn">Sign up</button>
+                <button class="btn">Preview</button>
+                <div class="menu-wrapper">
+                  <i class="ri-more-2-fill more-icon"></i>
+
+                  <div class="dropdown-menu">
+                    <p>Edit</p>
+                    <p>Delete</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="doc-row">
-              <div class="doc-name">
+              <div class="doc-name checkbox">
+                <input type="checkbox" />
                 <p>Title of Document Goes Here</p>
               </div>
               <div class="doc-status2">Completed</div>
               <div class="doc-date">12 Jan 2026 <br />2:01 PM</div>
               <div class="doc-action">
                 <button class="btn">Download PDF</button>
+                <div class="menu-wrapper">
+                  <i class="ri-more-2-fill more-icon"></i>
+
+                  <div class="dropdown-menu">
+                    <p>Edit</p>
+                    <p>Delete</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="doc-row">
-              <div class="doc-name">
+              <div class="doc-name checkbox">
+                <input type="checkbox" />
                 <p>Title of Document Goes Here</p>
               </div>
               <div class="doc-status2">Completed</div>
               <div class="doc-date">12 Jan 2026 <br />2:01 PM</div>
               <div class="doc-action">
                 <button class="btn">Download PDF</button>
+                <div class="menu-wrapper">
+                  <i class="ri-more-2-fill more-icon"></i>
+
+                  <div class="dropdown-menu">
+                    <p>Edit</p>
+                    <p>Delete</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="doc-row">
-              <div class="doc-name">
+              <div class="doc-name checkbox">
+                <input type="checkbox" />
                 <p>Title of Document Goes Here</p>
               </div>
               <div class="doc-status2">Completed</div>
               <div class="doc-date">12 Jan 2026 <br />2:01 PM</div>
               <div class="doc-action">
-                <button class="btn">Download File</button>
+                <button class="btn">Download PDF</button>
+                <div class="menu-wrapper">
+                  <i class="ri-more-2-fill more-icon"></i>
+
+                  <div class="dropdown-menu">
+                    <p>Edit</p>
+                    <p>Delete</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

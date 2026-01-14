@@ -32,7 +32,8 @@ html,body{
   font-size: 18px;
   padding: 10px;
   width: fit-content;
-  border: 2px solid rgb(222, 222, 222);
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
 }
 
 .user img{
@@ -46,17 +47,17 @@ html,body{
 }
 
 aside{
-  width: 22%;
+  width: 16%;
   min-width: 250px;
   height: 100vh;
-  border-right: 2px solid lightgray;
+  border-right: 1px solid lightgray;
   display: flex;
   flex-direction: column;
   padding: 24px;
   gap: 20px;
 }
 
-.menu p{
+/* .menu p{
   display: flex;
   align-items: center;
   gap: 15px;
@@ -64,7 +65,27 @@ aside{
   padding: 10px 0;
   cursor: pointer;
   padding-left: 10px;
+} */
+
+.menu p {
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  padding: 10px 0;
+  padding-left: 10px;
+  cursor: pointer;
 }
+
+.menu p.active {
+  background-color: #D3F7B5;
+  color: #14532D;
+  font-weight: 500;
+}
+
 .menu p img{
   height: 30px;
   width: 30px;
@@ -82,14 +103,13 @@ aside{
 
 
 .contact {
-  background-color: white;
-  padding: 16px;
-  border-radius: 12px;
-  font-size: 14px;
+  margin-top: auto;
+  background-color: transparent;
+  padding: 0;
 }
 
 .contact img {
-  margin-top: 250px;
+  /* margin-top: 250px; */
   width: 32px;
   margin-bottom: 10px;
   line-height: 100px;
@@ -113,16 +133,22 @@ aside{
 
 }
 
-.btn{
-  padding-left: 20px;
-  width: 150px;
-  padding: 8px 12px;
-  background-color: #ffffff ;
-  color: #000000;
-  border: 2px solid #B5BDCD ;
+.btn {
+  background-color: #ffffff;
+  border: 1px solid #CBD5E1;
   border-radius: 6px;
-  cursor: pointer;
+  width: 134px;
+  height: 34px;
+  font-size: 13px;
+  /* padding: 6px 12px; */
 }
+
+.btn:hover {
+  background-color: #F8FAFC;
+  cursor: pointer;
+
+}
+
 
 #right-section{
   flex: 1;
@@ -133,7 +159,8 @@ aside{
 .breadcrumb{
   display: flex;
   gap: 21px;
-  font-size: 14px;
+font-size: 13px;
+  color: #94A3B8;
   margin-bottom: 20px;
 }
 
@@ -151,12 +178,30 @@ aside{
   border-radius: 6px;
 }
 
-#right-section i{
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding: 8px 36px 8px 12px;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+}
+
+.search-box i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94A3B8;
+}
+
+/* #right-section i{
   position: relative;
   left: 1340px;
   top: -48px;
   color: rgb(134, 124, 124);
-}
+} */
 
 .document-list{
   display: flex;
@@ -165,25 +210,28 @@ aside{
 }
 
 .doc-table {
-  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
   overflow: hidden;
   font-size: 14px;
-  background-color: white;
 }
 
 .doc-header,
 .doc-row {
   display: grid;
-  grid-template-columns: 50% 20% 20% 10%;
+grid-template-columns: 4fr 2fr 2fr 1fr;
   align-items: center;
-  padding: 22px 20px;
+  padding: 18px 20px;
 }
 
+
 .doc-header {
-  background-color: #f8fafc;
-  font-weight: 600;
-  background-color: grey;
+  background-color: #F8FAFC;
+  font-size: 13px;
+  color: #475569;
 }
+
 
 .doc-row {
   border-top: 1px solid #e5e7eb;
@@ -199,9 +247,14 @@ aside{
 .doc-header,
 .doc-row {
   display: grid;
-  grid-template-columns: 4fr 2fr 2fr 1fr; /* last column for button */
+  grid-template-columns: 4fr 2fr 2fr 1fr;
   align-items: center;
 }
+
+.doc-name.checkbox {
+  gap: 12px;
+}
+
 
 .checkbox {
   display: flex;
@@ -217,19 +270,20 @@ aside{
 
 .checkbox i{
   position: relative;
-  top: 20px;
+  /* top: 20px; */
   font-size: 16px;
-  left: 2px;
+  left: -8px;
   color: rgb(134, 124, 124);
 
 }
 .doc-row {
-  border-top: 1px solid #e5e7eb;
+  padding: 18px 20px;
 }
 
 .doc-row:hover {
-  background-color: #becfde;
+  background-color: #F8FAFC;
 }
+
 
 .doc-action {
   display: flex;
@@ -263,9 +317,49 @@ aside{
   padding-left: 20px;
   width: 115px;
   padding: 8px 12px;
-  background-color: #1F4451 ;
+  background-color: #436D7C ;
   color: white;
   border: none;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.more-icon {
+  margin-left: 12px;
+  font-size: 18px;
+  margin-top: 5px;
+  color: #64748B;
+  cursor: pointer;
+}
+
+.menu-wrapper {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 28px;
+  background-color: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 140px;
+
+  display: none; /* hidden by default */
+  z-index: 10;
+}
+
+.menu-wrapper:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu p {
+  padding: 8px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dropdown-menu p:hover {
+  background-color: #F1F5F9;
 }
